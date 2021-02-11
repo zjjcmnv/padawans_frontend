@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <script type="text/javascript" src="eventos.js"></script>
+    <title>.: Event Dash :.</title>
+</head>
+
+<body onload="validaUser()">{
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h3> Event Dashboard </h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <div class="mb-3">
+                    <label for="txtDataInicio" class="form-label">Data Inicio</label>
+                    <input type="date" class="form-control" id="txtDataInicio">
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="mb-3">
+                    <label for="txtDataFim" class="form-label">Data Fim</label>
+                    <input type="date" class="form-control" id="txtDataFim">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button type="button" class="btn btn-primary" onclick="gerarRelatorio()">Gerar Relatório</button>
+            </div>
+        </div>
+
+        <div id="relatorio">
+            ** aqui preciso preencher o relatorio *** 
+
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
