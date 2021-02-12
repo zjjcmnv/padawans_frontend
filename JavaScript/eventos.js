@@ -16,6 +16,14 @@ function gerarRelatorio(){
     var txtIni = document.getElementById("txtDataInicio").value;
     var txtFim = document.getElementById("txtDataFim").value;
 
+    var dtinicio = new Date(txtIni);
+    var dtfim = new Date(txtFim)
+
+    if(dtinicio > dtfim){
+       alert("Digite uma data valida!")
+       return;
+    } 
+
     var url = `http://localhost:8088/buscarpordata?inicio=${txtIni}&fim=${txtFim}`;
     
     fetch(url).then(resposta => resposta.json()).then(lista => preencheRelatorio(lista));

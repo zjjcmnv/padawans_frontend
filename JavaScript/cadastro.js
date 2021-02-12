@@ -15,6 +15,7 @@ function cadastrar(){
     var txtRamal = document.getElementById("txtRamal").value;
     var txtLinkf = document.getElementById("txtLinkf").value;
     var txtSenha = document.getElementById("txtSenha").value;
+    var txtCSenha = document.getElementById("txtCSenha").value;
 
     var novoUser = {
         nome : txtNome,
@@ -32,13 +33,22 @@ function cadastrar(){
             "Content-type":"application/json"
         }
     }
+    if(txtSenha != txtCSenha){
+        alert("Senhas não conferem!");
+        return;
+    }
     fetch("http://localhost:8088/novousuario",cabecalho).then(resposta => {
         if(resposta.status == 201){
             alert("Usuário criado com sucesso")
             window.location = "index.html";
         }
+        else if(resposta.status == 400){
+            alert("Email ou Racf já existentes")
+            return;
+        }
         else{
             alert("Ocorreu algum problema nos campos")
+            return;
         }
     })
     
