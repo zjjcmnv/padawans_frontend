@@ -1,0 +1,10 @@
+body{
+    padding-top: 16px;
+    background-color: rgb(250, 232, 153);
+}
+
+.div01{
+    padding-top: 16px;
+    border: solid;
+    width :100%;
+}
