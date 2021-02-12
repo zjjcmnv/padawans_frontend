@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script type="text/javascript" src="../JavaScript/cadastro.js"></script>
+    <title>Cadastro EventDash</title>
+</head>
+<body>
+    <!--referencia para estilo-->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <!--Titulo -->
+    <div class ="row">
+        <div class = "col-12 text-center">
+            <h3>Cadastro EventDash</h3>
+        </div>
+    </div>
+
+    <!--Formulario -->
+    <div class="container div01">
+        <div class="mb-3">
+            <label for="txtNome" class="form-label">Insira seu Nome</label>
+            <input type="text" class="form-control" id="txtNome" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="txtEmail" class="form-label">Insira seu E-mail</label>
+            <input type="email" class="form-control" id="txtEmail" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="txtRamal" class="form-label">Insira seu Ramal</label>
+            <input type="text" class="form-control" id="txtRamal" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="txtLinkf" class="form-label">Insira seu link de foto</label>
+            <input type="url" class="form-control" id="txtLinkf" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="txtSenha" class="form-label">Insira sua Senha</label>
+            <input type="password" class="form-control senha" id="txtSenha" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3" onload=checksenha()>
+            <label for="txtCSenha" class="form-label">Redigite sua senha</label>
+            <input type="password" class="form-control senha" id="txtCSenha" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">Confirme sua senha novamente </div>
+        </div>
+        <button type="button"  class="btn btn-primary" onclick="cadastrar()">Enviar Dados</button> <br>
+        
+    </div>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>

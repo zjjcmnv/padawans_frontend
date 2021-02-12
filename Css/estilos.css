@@ -8,3 +8,24 @@ body{
     border: solid;
     width :100%;
 }
+.div02{
+    padding-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 14px;
+    margin-right: 1px;
+    border: solid;
+    width :98%; 
+}
+.btn-primary{
+    display:block;
+    background:#EC7000;
+    color:white;
+    text-align:center;
+    padding:2px;
+    margin-bottom: 8px;
+    border-radius:5px
+}
+.links01{
+    padding-top: 16px;
+    font-size: large;
+}

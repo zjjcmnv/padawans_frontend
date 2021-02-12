@@ -65,7 +65,7 @@ estrutura do objeto evento
                                           <div class="col-xs-6 col-sm-6 col-md-6 col-lg-2 col-xl-2">
                                              ${evento.equipamento.ipAddr}
                                           </div>
-                                      </div>`; 
+                                      </div>`;
    }
 
    document.getElementById("relatorio").innerHTML = strRelatorio;
